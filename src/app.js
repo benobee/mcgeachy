@@ -14,7 +14,7 @@ const App = {
         this.execute();
     },
     cacheDOM () {
-        this.articles = document.querySelector("#collection-5a5e9d5e71c10b937a3bfec6");
+        this.articles = document.querySelector("#e-letters");
     },
     execute () {
         if (this.articles) {

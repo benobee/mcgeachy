@@ -45,4 +45,3 @@ master controller config.
 -   `events` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** pub sub events
 
 Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** for use as a Vue component
-"# mcgeachy" 

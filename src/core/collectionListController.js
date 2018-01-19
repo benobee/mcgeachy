@@ -22,7 +22,7 @@ const events = new Events();
 const collectionListController = {
     init (parent) {
         this.config = {
-            parent: parent.querySelector("#collection-items-vue")
+            parent
         };
 
         this.data = {};
