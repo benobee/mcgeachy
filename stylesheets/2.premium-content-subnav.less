@@ -1,0 +1,30 @@
+/* PREMIUM CONTENT SUB NAV */
+
+.sub-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background: rgba(220, 220, 220, 0.2);
+    .sub-nav__item {
+        transition: background 0.3s;
+        width: 100%;
+        text-align: center;
+        &:nth-child(1) {
+            border-right: 2px solid rgba(200, 200, 200, 0.15);
+        }
+        &:hover {
+            background: rgba(200, 200, 200, 0.15);
+            a {
+                text-decoration: none !important;
+            }
+        }
+        a {
+            display: block;
+            width: 100%;
+            font-size: 1.5em;
+            line-height: 2em;
+            color: @red;
+            transition: color 0.2s;
+        }
+    }
+}

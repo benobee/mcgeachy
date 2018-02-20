@@ -1,3 +1,24 @@
+/* E-LETTERS */
+
+#collection-5a5e9ebe0d92971733b929e9 {
+    .page-banner-wrapper {
+        display: none;
+    }
+    .sub-nav {
+        [class*=item] {
+            &:nth-child(1) {
+                background: @red;
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+
 .app-wrapper {
     opacity: 0;
     transition: opacity 0.8s;
@@ -53,9 +74,17 @@
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: flex-start;
+        @media screen and (min-width: 641px) {
+            margin-left:-1em;
+            margin-right: -1em;
+        }
         .item {
-            flex: 0 1 30.33%;
+            @media screen and (min-width: 1201px) {
+                flex: 1 1 18em;
+                margin: 1em;
+                max-width: 30%;
+            }
             .inner-content {
                 display: block;
             }
@@ -69,8 +98,10 @@
                     margin: 0 auto;
                 }
             }
-            @media screen and (min-width:641px) and (max-width:1368px) {
-                flex: 0 0 48%;
+            @media screen and (min-width:641px) and (max-width:1200px) {
+                flex: 1 1 15em;
+                margin: 1em;
+                max-width: 45%;
             }
             @media screen and (max-width:640px) {
                 margin: 0vw;
@@ -144,3 +175,4 @@
         }
     }
 }
+

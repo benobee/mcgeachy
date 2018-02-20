@@ -6,15 +6,24 @@
     align-items: center;
     cursor: pointer;
     height: 100%;
-    font-size: 22px;
+    font-size: 18px;
     .filter-ui__icon {
+        //display:none;
+        svg {
+            max-width: 40px !important;
+        }
+        path {
+            fill: @cyan;
+        }
         height: 50px;
     }
     .filter-ui__category {
         margin-left: 5px;
-        font-weight: 700;
+        color: @cyan;
+        font-weight: 400;
     }
 }
+
 
 /* FILTER LIST */
 

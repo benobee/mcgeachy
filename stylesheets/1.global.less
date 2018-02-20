@@ -1,0 +1,33 @@
+/* KEYFRAMES */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.sqs-gallery-block-grid {
+    .sqs-gallery-design-grid-slide {
+        max-height: 160px !important;
+    }
+    .slide .margin-wrapper a.image-slide-anchor {
+        padding-bottom: 160px !important;
+    }
+    img {
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(1);
+        filter: grayscale(1);
+        transition: all ease-in-out 600ms !important;
+    }
+    .slide:hover {
+        img {
+            -webkit-filter: grayscale(0);
+            -moz-filter: grayscale(0);
+            filter: grayscale(0);
+        }
+    }
+}
